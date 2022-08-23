@@ -1,0 +1,40 @@
+
+[FV.FV_GENERIC]
+BlockSize          = 0x10000
+FvAlignment        = 16
+ERASE_POLARITY     = 1
+MEMORY_MAPPED      = TRUE
+STICKY_WRITE       = TRUE
+LOCK_CAP           = TRUE
+LOCK_STATUS        = TRUE
+WRITE_DISABLED_CAP = TRUE
+WRITE_ENABLED_CAP  = TRUE
+WRITE_STATUS       = TRUE
+WRITE_LOCK_CAP     = TRUE
+WRITE_LOCK_STATUS  = TRUE
+READ_DISABLED_CAP  = TRUE
+READ_ENABLED_CAP   = TRUE
+READ_STATUS        = TRUE
+READ_LOCK_CAP      = TRUE
+READ_LOCK_STATUS   = TRUE
+
+
+FILE SEC = 8af09f13-44c5-96ec-1437-dd899cb5ee5d  {
+  SECTION RAW = XBL/volume-0/file-8af09f13-44c5-96ec-1437-dd899cb5ee5d/section0.raw
+  SECTION TE = XBL/volume-0/file-8af09f13-44c5-96ec-1437-dd899cb5ee5d/section1.te
+
+}
+
+FILE FREEFORM = dde58710-41cd-4306-dbfb-3fa90bb1d2dd  {
+  SECTION UI = "uefiplat.cfg"
+  SECTION RAW = XBL/volume-0/file-dde58710-41cd-4306-dbfb-3fa90bb1d2dd/section1.raw
+
+}
+
+FILE FV_IMAGE = 9e21fd93-9c72-4c15-8c4b-e77f1db2d792  {
+  SECTION GUIDED 9e21fd93-9c72-4c15-8c4b-e77f1db2d792  {
+
+  }
+
+}
+
